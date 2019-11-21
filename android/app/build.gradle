@@ -128,13 +128,13 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.jintaiyangappguo"
+        applicationId "com.jintaiyangmi"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 5
         versionName "1.5.0"
         manifestPlaceholders = [
-                  JPUSH_APPKEY: "3ebf167c52467953ab443e38",        //在此替换你的APPKey
+                  JPUSH_APPKEY: "7e8172cd6e8d794534e53538",        //在此替换你的APPKey
                   JPUSH_CHANNEL: "default"        //在此替换你的channel
           ]
     }
@@ -199,6 +199,7 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-svg')
     implementation project(':react-native-image-picker')
     implementation project(':react-native-webview')
     implementation project(':jpush-react-native')  // 添加 jpush 依赖

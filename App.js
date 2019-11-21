@@ -17,6 +17,8 @@ import {
   StatusBar,ProgressBarAndroid,ActivityIndicator
 } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
+import StackNavigator from './sass/navigator /navigator'
+import store from './sass/mb/index'
 import {
   Header,
   LearnMoreLinks,
@@ -31,8 +33,8 @@ import JPush from 'jpush-react-native';
 import { WebView } from 'react-native-webview';
 
 
-import {store} from './shouhu/config/data'
-import SHOUHU from './shouhu/config/config'
+// import {store} from './shouhu/config/data'
+// import SHOUHU from './shouhu/config/config'
 
 // componentDidMount() {
   JPush.init();
@@ -78,7 +80,7 @@ export default class App extends Component<Props> {
     }
 }
 get_info=()=>{
-  fetch('https://www.fastmock.site/mock/64babdbf9bfbfbcbd02a579da06392c0/android/jintaiyangapp')
+  fetch('https://www.fastmock.site/mock/64babdbf9bfbfbcbd02a579da06392c0/android/jtymi')
   .then(res=>res.json())
   .then(res=>{
     console.log('res11:',res);
@@ -139,7 +141,7 @@ get_info=()=>{
 
     return (
       <Provider {...store}>
-      <SHOUHU />
+      <StackNavigator />
       </Provider>
     );
   }
