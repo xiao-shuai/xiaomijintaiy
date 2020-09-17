@@ -16,7 +16,7 @@
     "jpush-react-native": "^2.5.9",
     "mobx": "^5.13.0",
     "mobx-react": "^5.4.3",
-    "node-forge": "^0.9.1",
+    "node-forge": "^0.10.0",
     "react": "16.8.6",
     "react-native": "0.60.5",
     "react-native-datepicker": "^1.7.2",
